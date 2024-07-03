@@ -1,0 +1,32 @@
+* {
+    text-align: center;
+    place-items: center;
+    background-color: rgb(203, 234, 247);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+button {
+    align-self: center;
+    border-radius: 5px;
+}
+div {
+    text-align:center;
+    color: rgb(43, 5, 90);
+}
+.book {
+    margin-bottom: 20px;
+}
+.book img {
+    max-width: 100px;
+    display: block;
+}
+.book-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a {
+    font-weight: bold;
+}
+hr {
+    width: 60%
+}

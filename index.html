@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookband</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    text-align: center;
+    place-items: center;
+    background-color: rgb(203, 234, 247);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+button {
+    align-self: center;
+    border-radius: 5px;
+}
+div {
+    text-align:center;
+    color: rgb(43, 5, 90);
+}
+.book {
+    margin-bottom: 20px;
+}
+.book img {
+    max-width: 100px;
+    display: block;
+}
+.book-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a {
+    font-weight: bold;
+}
+hr {
+    width: 60%
+}
+    </style>
+</head>
+<body>
+    <h1>Bookband</h1>
+
+    <div class="intro">
+        <p>heya, sup?</p>
+        <p>oh wait, i didn't catch your name...</p>
+        <form>
+            <label for="name">what's your name?</label><br>
+            <input type="text"/>
+        </form>
+        <br>
+        <button><a href="E:\MyProjects\n&w\main.html">let's start</a></button>
+    </div>
+    <!-- <p>okay, you said it yourself<br>let's get started</p> -->
+    <div class="options">
+        <p>okay, sooo...</p>
+        <p>what do you want?</p>
+        <button>book rec</button>
+        <button>song rec</button>
+    </div><br>
+
+    <div class="book-recs">
+
+        <hr>
+        <h3>Book Recs</h3>
+        <form>
+            <label for="bgenre">genre</label>
+            <select id="bgenre">
+                <option value="fantasy">fantasy</option>
+                <option value="thriller">thriller</option>
+                <option value="romance">romance</option>
+                <option value="science fiction">sci-fi</option>
+                <option value="horror">horror</option>
+                <option value="literary">literary</option>
+                <option value="poetry">poetry</option>
+            </select><br><br>
+            <label for="length">length you want</label><br>
+            <input type="checkbox" name="length" value="s" id="small">small (less than 200 pages)</input><br>
+            <input type="checkbox" name="length" value="m" id="med">medium (200-400 pages)</input><br>
+            <input type="checkbox" name="length" value="l" id="long">long (more than 400 pages)</input><br><br>
+            <label>pick num of recs</label><br>
+            <label></label>
+            <input type="radio" name="num" value=1 id="1">1</input><br>
+            <input type="radio" name="num" value=3 id="3">3</input><br><br>
+
+        </form>
+        <button>generate</button><br><br>
+    </div>
+
+    <div class="song-recs">
+
+        <hr>
+        <h3>Song Recs</h3>
+        <form>
+            <label for="sgenre">genre</label>
+            <select id="sgenre">
+                <option value="pop">pop</option>
+                <option value="classical">classical</option>
+                <option value="rock">rock</option>
+                <option value="metal">metal</option>
+                <option value="instrumental">instrumental</option>
+                <option value="folk">folk</option>
+                <option value="hip">hip-hop</option>
+            </select><br><br>
+            <!-- <label for="length">length you want</label><br>
+            <input type="checkbox" name="length" value="s" id="small">small (less than 200 pages)</input><br>
+            <input type="checkbox" name="length" value="m" id="med">medium (200-400 pages)</input><br>
+            <input type="checkbox" name="length" value="l" id="long">long (more than 400 pages)</input><br><br> -->
+            <label>pick num of recs</label><br>
+            <label></label>
+            <input type="radio" name="num" value=1 id="1">1</input><br>
+            <input type="radio" name="num" value=3 id="3">3</input><br><br>
+
+        </form>
+        <button>generate</button><br><br>
+    </div>
+
+    <button><a href="index.html">back</a></button>
+    <hr>
+    <script src="script.js"></script>
+</body>
+</html>
